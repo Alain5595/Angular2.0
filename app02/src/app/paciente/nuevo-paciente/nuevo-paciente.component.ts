@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 
+
 @Component({
   selector: 'app-nuevo-paciente',
   templateUrl: './nuevo-paciente.component.html',
@@ -20,7 +21,7 @@ export class NuevoPacienteComponent implements OnInit {
       pagingType: 'full_numbers',
       pageLength: 10
     };
-    this.paciente=[{acciones:"Guardar",apellidos:"Pocomucha",nombre:"Jesus"}];
+    this.paciente=[{Acciones:"Guardar",Apellidos:"Pocomucha",Nombres:"Jesus"}];
     
     this.dtTrigger.next(null);
   }
