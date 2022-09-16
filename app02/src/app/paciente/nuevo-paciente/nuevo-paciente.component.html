@@ -1,0 +1,47 @@
+<p>nuevo-paciente</p>
+
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+      <tr>
+        <th>Acciones</th>
+        <th>Apellidos</th>
+        <th>Nombres</th>
+        <th>Sexo </th>
+        <th>Edad </th>
+        <th>Fecha de nacimiento</th>
+        <th>Estado civil</th>
+        <th>Tipo de documento</th>
+        <th>Numero de documento</th>
+        <th>Celular</th>
+        <th>Domicilio</th>
+        <th>Correo</th>
+        <th>Ocupacion</th>
+        <th>Alergia</th>
+        <th>Intervenciones quirurgicas</th>
+        <th>Vacunas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pacientes of paciente">
+        <td>{{ pacientes.Acciones }}</td>
+        <td>{{ pacientes.Apellidos }}</td>
+        <td>{{ pacientes.Nombres }}</td>
+        <td>{{ pacientes.Sexo }}</td>
+        <td>{{ pacientes.Edad }}</td>
+        <td>{{ pacientes.Fecha_de_nacimiento }}</td>
+        <td>{{ pacientes.Estado_civil }}</td>
+        <td>{{ pacientes.Tipo_de_documento }}</td>
+        <td>{{ pacientes.Numero_de_documento }}</td>
+        <td>{{ pacientes.Celular }}</td>
+        <td>{{ pacientes.Domicilio }}</td>
+        <td>{{ pacientes.Correo }}</td>
+        <td>{{ pacientes.Ocupacion }}</td>
+        <td>{{ pacientes.Alergia }}</td>
+        <td>{{ pacientes.Intervenciones_quirurgicas }}</td>
+        <td>{{ pacientes.Vacunas }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+    
