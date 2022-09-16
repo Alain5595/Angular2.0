@@ -8,6 +8,8 @@ import { HeaderComponent } from './pagina/header/header.component';
 import { BodyComponent } from './pagina/body/body.component';
 import { FooterComponent } from './pagina/footer/footer.component';
 import { DataTablesModule } from 'angular-datatables';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,11 +19,14 @@ import { DataTablesModule } from 'angular-datatables';
     HeaderComponent,
     BodyComponent,
     FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DataTablesModule,
+    FormsModule,
+    HttpClientModule,
     
   ],
   providers: [],
