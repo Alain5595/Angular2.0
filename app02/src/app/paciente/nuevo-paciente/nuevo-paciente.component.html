@@ -1,49 +1,48 @@
 <h1>Proyecto de DataTable</h1>
+<div class="content-wrapper table-responsive">
 
-<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover table table-striped table-bordered" style="color:#2fb1b1">
-  
-  <thead>
-      <tr>
-        <th>Acciones</th>
-        <th>Apellidos</th>
-        <th>Nombres</th>
-        <th>Sexo </th>
-        <th>Edad </th>
-        <th>Fecha de nacimiento</th>
-        <th>Estado civil</th>
-        <th>Tipo de documento</th>
-        <th>Numero de documento</th>
-        <th>Celular</th>
-        <th>Domicilio</th>
-        <th>Correo</th>
-        <th>Ocupacion</th>
-        <th>Alergia</th>
-        <th>Intervenciones quirurgicas</th>
-        <th>Vacunas</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let pacientes of paciente">
-        <td>{{ pacientes.Acciones }}</td>
-        <td>{{ pacientes.Apellidos }}</td>
-        <td>{{ pacientes.Nombres }}</td>
-        <td>{{ pacientes.Sexo }}</td>
-        <td>{{ pacientes.Edad }}</td>
-        <td>{{ pacientes.Fecha_de_nacimiento }}</td>
-        <td>{{ pacientes.Estado_civil }}</td>
-        <td>{{ pacientes.Tipo_de_documento }}</td>
-        <td>{{ pacientes.Numero_de_documento }}</td>
-        <td>{{ pacientes.Celular }}</td>
-        <td>{{ pacientes.Domicilio }}</td>
-        <td>{{ pacientes.Correo }}</td>
-        <td>{{ pacientes.Ocupacion }}</td>
-        <td>{{ pacientes.Alergia }}</td>
-        <td>{{ pacientes.Intervenciones_quirurgicas }}</td>
-        <td>{{ pacientes.Vacunas }}</td>
-      </tr>
-    </tbody>
- 
-  </table>
+  <!-- Contenerdor para el modal -->
+  <div id="modalContainer1"></div>
+
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2 ">
+        <div class="col-sm-6">
+          <!---Encabezado del dashboard -->
+          <h1>Paciente</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mt-3"> 
+                <a class="btn btn-success" href="#" role="button">Agregar</a>
+              </div> 
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover table table-striped table-bordered" style="color:#2fb1b1">
+    <thead>
+        <tr>    
+          <th>Apellido Paterno</th>
+          <th>Apellido Materno</th>
+          <th>Nombres</th>
+          <th>Sexo </th>
+          <th>Edad </th>        
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pacientes of paciente">     
+          <td>{{ pacientes.apellido_pat }}</td>
+          <td>{{ pacientes.apellido_mat }}</td>
+          <td>{{ pacientes.nombre }}</td>
+          <td>{{ pacientes.sexo }}</td>
+          <td>{{ pacientes.edad }}</td>      
+        </tr>
+      </tbody>
+    </table>
+</section>
   
   
     

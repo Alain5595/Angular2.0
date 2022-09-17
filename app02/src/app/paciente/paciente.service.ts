@@ -10,6 +10,6 @@ export class PacienteService {
 
   getPaciente()
   {
-    return this.http.get("http://api.miapp.com/api/v1/paciente");
+    return this.http.get("http://apis.angular.com/api/v1/paciente");
   }
 }
